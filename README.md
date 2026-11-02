@@ -57,7 +57,7 @@ Implement the constructor `__init__` method to initialize the instance attribute
 
 Create a terminal application to interact with your Car class. For each option in the menu provided, utilize class and instance attributes and instance methods to run your terminal program as expected. Use Python built in methods such as `input` to allow the user to input data through the terminal.
 
-```bash
+```text
 ----  WELCOME  ----
 1. Add a car
 2. View all cars
