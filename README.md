@@ -1,6 +1,41 @@
 # Exercise: Car Management System
 
-In this exercise, you'll create a Python class called `Car` to manage a collection of cars in a terminal-based application. The goal is to practice using class and instance methods, while also understanding the distinction between them.
+*My solution to Code Platoons OOP Car Management exercise*
+
+In this exercise, I was asked to create a Python class called `Car` to manage a collection of cars in a terminal-based application. The goal was to practice using class and instance methods, while also understanding the distinction between them.
+
+## How To Run It
+
+### Requirements:
+- Python 3.11 or newer
+- *(Optional)* Docker: to run the app or tests without installing Python locally 
+
+### Run The Application Locally
+```bash
+python3 car_management.py
+```
+Launches the interactive menu.
+Follow the prompts to add cars, view them, see details, record services, and update mileage. 
+
+### Run Tests Locally
+```bash
+pip install pytest
+python3 -m pytest -v
+```
+
+### Run The Application In Docker
+```bash
+docker build -t vehicle-shop .
+docker run -it vehicle-shop
+```
+The `-it` flags are required for the app to work and read the keyboard input. This creates an interactive terminal for the app.
+
+### Run The Test In Docker
+```bash
+docker build -f Dockerfile.test -t vehicle-shop-tests .
+docker run vehicle-shop-tests
+```
+
 
 ## Step 0: Class Definition
 
